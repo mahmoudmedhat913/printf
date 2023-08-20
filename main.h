@@ -70,6 +70,7 @@ int get_flag(char *s, params_t *params);
 int get_modifier(char *s, params_t *params);
 char *get_width(char *s, params_t *params, va_list ap);
 int print_hex(va_list ap, params_t *params);
+int print_HEX(va_list ap, params_t *params);
 int print_binary(va_list ap, params_t *params);
 int print_octal(va_list ap, params_t *params);
 int print_from_to(char *start, char *stop, char *except);
