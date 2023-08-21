@@ -14,7 +14,7 @@ int print_char(va_list ap, params_t *params)
 
 	if (params->minus_flag)
 		sum += _putchar(y);
-	while (c++ < params->width)
+	while (x++ < params->width)
 		sum += _putchar(c);
 	if (!params->minus_flag)
 		sum += _putchar(y);

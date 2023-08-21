@@ -15,7 +15,7 @@ int print_hex(va_list ap, params_t *params)
 
 	if (params->l_modifier)
 		l = (unsigned long)va_arg(ap, unsigned long);
-	else if (params->h.modifier)
+	else if (params->h_modifier)
 		l = (unsigned short int)va_arg(ap, unsigned int);
 	else
 		l = (unsigned int)va_arg(ap, unsigned int);
@@ -94,7 +94,7 @@ int print_octal(va_list ap, params_t *params)
 
 	if (params->l_modifier)
 		l = (unsigned long)va_arg(ap, unsigned long);
-	else if (params->h.modifier)
+	else if (params->h_modifier)
 		l = (unsigned short int)va_arg(ap, unsigned int);
 	else
 		l = (unsigned int)va_arg(ap, unsigned int);
