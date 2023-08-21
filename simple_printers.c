@@ -55,7 +55,7 @@ int print_rev(va_list ap, params_t *params)
 int print_rot13(va_list ap, params_t *params)
 {
 	int i = 0, j = 0, count = 0;
-	char array[] = "NOPQRSTUVWXYZABCDEFGHIJKLM nopqrstuvwxyzabcdefghijklm";
+	char array[] = "NOPQRSTUVWXYZABCDEFGHIJKLM        nopqrstuvwxyzabcdefghijklm";
 	char *a = va_arg(ap, char *);
 	(void)params;
 
