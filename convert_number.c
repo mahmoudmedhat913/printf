@@ -53,7 +53,7 @@ int print_HEX(va_list ap, params_t *params)
 	str = convert(l, 16, CONVERT_UNSIGNED, params);
 	if (params->hashtag_flag && l)
 	{
-		*--str = 'x';
+		*--str = 'X';
 		*--str = '0';
 	}
 	params->unsign = 1;
